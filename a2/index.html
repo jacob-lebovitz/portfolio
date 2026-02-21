@@ -50,70 +50,88 @@
 			<figure>
 				<img src="imagesa2/pi-transactions.png" alt="Pie Chart of Transactions by Investor Type" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				Many of the questions I was interested in answering revolve around investor versus non-investor activity in Boston’s housing market. To establish context, I first examined the overall distribution of transactions by buyer type (Institutional, Large, Medium, Small investors, and Non-investors). This pie chart shows that roughly 75% of total transactions are made by non-investors, while small investors make up the largest share among investor categories. This reveals a strong baseline dominance of non-investor transactions in terms of volume, suggesting that any analysis of displacement or submarket change must consider proportional measures rather than raw counts. It also raises the question: although investors transact less frequently, do they exert disproportionate influence through price or concentration?
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/pi-price.png" alt="Pie Chart of Price by Investor Type" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				After examining transaction counts, I turned to total transaction value to better understand market power. While institutional investors account for the smallest number of transactions, this visualization shows that they represent the largest share of total transaction value. This suggests that institutional actors tend to purchase higher-priced or larger-scale properties, potentially concentrating ownership in high-value assets. It motivates further investigation into where these high-value purchases are geographically concentrated, which was explored through mapping and found to be that all $100M+ institutional purchases were located in Boston urban areas (Back Bay, Downtown, South Boston).
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/year-investor-bar.png" alt="Price Distribution of Properties by Investor Type" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This bar chart examines how transaction volumes have changed over 2000-2022. Although non-investor transactions remain the largest share overall, their relative presence has gradually declined, while investor participation has slowly increased. This suggests a structural shift in ownership patterns over time, aligning with broader national trends in housing financialization discussed in the article Homes for Profit. However, this visualization alone does not establish causality between investor growth and non-investor decline. To explore whether submarkets influence one another, such as dense urban areas affecting suburban neighborhoods, it becomes necessary to disaggregate trends geographically. When looking at neighborhood casualty, it is difficult to understand how neighborhoods influence eachother with this dataset alone, and it would require further development changes, housing initiatives, and population movements to better understand inter-community relationships. 
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/one-dollar-map.png" alt="One Dollar Priced Transactions Map of Boston" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				During data exploration, I identified a subset of transactions listed at $1, which is not realistic for Boston residential sales. Many of these transactions also lacked complete property information, such as bedroom counts, despite listing valid addresses. This suggests they may represent internal transfers, bookkeeping transactions, or incomplete data entries rather than true market activity. Identifying and excluding these anomalies is critical to prevent skewed conclusions about pricing, flipping behavior, or investor strategy. This step strengthens the validity of subsequent analyses of price trends and submarket impacts.
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/million-map.png" alt="100+ Million Dollar Priced Transactions Map of Boston" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				In addition to unusually low values, I examined extremely high-priced transactions to determine whether they reflected data errors. Most of these transactions appeared to be legitimate institutional purchases of large buildings or multi-unit properties. However, their presence significantly skewed average price statistics, reinforcing the need to analyze medians or log-scaled distributions when assessing affordability. This distinction is essential when evaluating whether investor activity contributes to rising aggregate housing costs.
+
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="imagesa2/logprice.png" alt="Log Price Distribution of Properties" />
+				<figcaption>
+				Because housing prices span several orders of magnitude, a log transformation is necessary to accurately visualize the distribution. This chart confirms the extreme right skew of transaction prices and highlights how institutional investors are disproportionately represented in higher price bins. Without log scaling, these patterns would be compressed and difficult to interpret. This distributional insight informs all subsequent affordability and displacement analyses.
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/investor-heat.png" alt="Investor Heat Map of Boston" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				To better understand how investors decide which properties to purchase, I examined housing style preferences. While raw counts are influenced by overall volume differences, proportional comparisons reveal that investors disproportionately target high-rise, mid-rise, and row-style properties. Non-investors, by contrast, show relatively stronger representation in free-standing and mid-rise styles. This suggests that build form influences investment behavior and may shape neighborhood-level change. If certain styles are more attractive to investors, future housing development strategies could intentionally diversify build types to preserve owner-occupancy opportunities.
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/zip-investor-prop.png" alt="Investor Activity Proportion of Transactions by Neighborhood" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This map visualizes the proportion of transactions in each zip code made by investors. Areas shaded darker represent neighborhoods where investor activity comprises a higher share of transactions, signaling potential vulnerability to ownership concentration. This visualization begins to address my question about which submarkets are most targeted and whether high investor concentration correlates with displacement risk. It raises a critical follow-up: does increased investor presence correspond with reduced non-investor participation or rising prices over time?
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/displacement.png" alt="Displacement Risk Map of Boston" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				Building on the proportional investor map, I created a displacement risk index combining investor share, flip rate, and average price change between transactions. This composite score identifies zip codes experiencing both high turnover and rapid price escalation. Notably, zip code 02126, a suburban area, emerges as high risk, suggesting that investment pressures are not confined to dense urban cores. This finding directly connects to my first research question regarding submarket interconnectedness. Investor behavior in dense areas may spill outward, influencing surrounding neighborhoods. However, it would not be possible in the limited time of this project to identify drivers of spillover and locate the reasons as to why 02126 was impacted by urban investments, if it was at all. 
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/line-trend-investor.png" alt="Trend of Investor and Non-Investor Activity Over Time" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				To better assess potential interaction effects, this dual-axis chart compares the percentage of investor transactions with the total count of non-investor transactions over time. Because the share of investor and non-investor transactions sums to one, plotting both percentages would be redundant; instead, I compare investor share to absolute non-investor volume. The pattern suggests that as investor participation increases, non-investor transaction counts decline. While this does not prove causality, it supports the hypothesis that rising investor presence may influence accessibility for traditional homebuyers.
+
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="imagesa2/buildyear.png" alt="Build Year Distribution of Properties" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				To explore whether new construction improves affordability or attracts investors, I examined transactions by property age. Investors show a strong preference for older housing stock, particularly properties built before 1920, which may offer renovation or flipping potential. In contrast, non-investors dominate purchases of homes built after 2000. This suggests that new housing construction may provide relatively greater opportunities for owner-occupants, potentially moderating displacement pressures. However, further analysis is needed to determine whether new builds remain affordable or simply reflect higher entry price points.
+
 				</figcaption>
 			</figure>
 		</section>
