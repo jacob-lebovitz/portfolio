@@ -17,7 +17,7 @@ margin-inline: auto;
 padding: 1em;
 }
 img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -70,4 +70,35 @@ form button {
   grid-column: 1 / -1;            
   padding: 0.5em;                
   font: inherit;               
+}
+
+.projects {
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects section {
+  display: grid;
+  grid-template-rows: subgrid; 
+  grid-row: span 3;           
+}
+
+.projects h2 {
+  margin: 0; 
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;     
+  text-wrap: balance;  
+}
+
+.resume section {
+  display: grid;
+  grid-template-rows: subgrid; 
+  grid-row: span 3;           
 }
