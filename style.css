@@ -56,4 +56,18 @@ select {
 form {
   display: grid;
   grid-template-columns: auto 1fr;
-}          
+  gap: 1em;   
+} 
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;  
+  align-items: center;
+  grid-column: 1 / -1;            
+}
+
+form button {
+  grid-column: 1 / -1;            
+  padding: 0.5em;                
+  font: inherit;               
+}
