@@ -97,8 +97,44 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;  
 }
 
-.resume section {
-  display: grid;
-  grid-template-rows: subgrid; 
-  grid-row: span 3;           
+
+
+/* Resume */
+
+.resume-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.resume-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+
+.resume-page article {
+  margin-bottom: 18px;
+}
+
+.resume-page article p {
+  margin: 2px 0;
+}
+
+.resume-page time {
+  float: right;
+  font-size: 0.9rem;
+}
+
+.resume-page ul {
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+.resume-page li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
 }
