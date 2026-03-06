@@ -60,9 +60,9 @@
       <h3>AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="imagesa4/noprop.png" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+          Binned histogram showing percentage of women traveling out of state for abortion care, grouped by percentage of women without clinic access in their county. 
 				</figcaption>
 			</figure>
 
@@ -71,16 +71,32 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>
+					<strong>Binned Histogram Chart</strong><br>
+					<em>Diverging Scale of Deceptiveness: +0.5</em><br>
+					Motivation: I grouped the percentage of women without clinic access into bins to simplify the comparison between access levels. Binning removes some precision and visibility of outliers from the data but makes it easier for viewers to compare groups of states with similar access conditions. This transformation shifts the focus away from a precise linear relationship and instead emphasizes differences within categories, which only somewhat shows changes in color throughout each group.
+				</li>
+
+				<li>
+					<strong>Coloring of Bars / States</strong><br>
+					<em>Diverging Scale of Deceptiveness: -1.0</em><br>
+					Motivation: I used color to represent the percentage of women traveling out of state for an abortion, which is less immediately interpretable for the reader than position on an axis. I also set the scale of the percentage bins from 0 to 100 since this is the standard range for percentages, even though the maximum value in the dataset is only 94. I considered using a diverging color scheme that would emphasize the highest values more strongly, but instead chose a sequential scheme that makes the differences slightly less pronounced. This results in light and dark colors appearing in each access bin, reinforcing the argument that there is substantial variation within groups rather than a clear pattern across them.
+				</li>
+
+				<li>
+					<strong>Title</strong><br>
+					<em>Diverging Scale of Deceptiveness: -1.5</em><br>
+					Motivation: The title “Travel Rates Vary Within Clinic Access Groups” intentionally directs the reader’s attention toward inconsistency in the data within each bin. This framing discourages the interpretation that clinic access alone determines travel behavior and instead encourages viewers to examine the variation inside each category. As a result, readers may focus more on differences within bins rather than comparing trends across bins.
+				</li>
 			</ul>
     </section>
 
     <section>
       <h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+      <p>These two visualizations demonstrated how different visual and text-based choices can change how the same dataset is interpreted. The most straightforward part of the process was generating the initial plot and relationship between the two variables: % of women with access to a clinic and % of women going out of the state for an abortion. It was easy to create the initial visualization and original claim of positive correlation due to simply observing a positive correlation between variables using scatterplot. What proved more challenging was designing a second visualization that used the same data but encouraged a different interpretation. It was also challenging to design and add specific aspects that proved a point (subdued color gradient, trend line, R-Squared value, etc.). After already knowing a “truth” about the data, it was difficult to think about it in a different way and prove the complete opposite narrative. I realized that subtle changes such as grouping data into bins or shifting the title framing can significantly alter the narrative that viewers perceive. It is also essential to realize what visual encodings are easily processed by humans, and using them when you want to communicate a message, but also using more complicated ones as ways to deceive the audience.<br>
+		This exercise also changed how I think about ethics and deception. I now think that ethical visualization does not necessarily mean eliminating persuasion, since all visualizations involve choices about framing and narrative. Additionally, the guest lecture with Zan made me more aware that all data visualizations should have the goal to communicate a message with the audience. Therefore, without deceptive data manipulation, making impactful choices in the visualization can allow for a stronger communication and impactful addition to research. Ethical visualization involves being transparent about those choices and avoiding manipulations that fundamentally distort the data. However, now the question becomes what does “deceptive data manipulation” mean, and where is the line between deception and attention-focusing. I chose to highlight real patterns in the data without hiding important context, and chose styles that align with my message. In this project, both visualizations use the same underlying data but emphasize different aspects of it, illustrating how simply visualization choices can influence interpretation while still remaining grounded in the evidence.
+	</p>
     </section>
 	</main>
 </body>
